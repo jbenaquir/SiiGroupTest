@@ -6,12 +6,14 @@ MVC.NET
 Framework 6.0 required
 
 Once opened Solution
-1. Go to [SiiGroupTest] and Run to open browser and check
+1. Go to [SiiGroupTest] do second clic and Setup as Start up Project
+2. Run to open browser and check
 
+NOTE:
 API https://dummy... sometimes returns (too often)
 429 Too Many Requests
 so be patient
 
-2. Go to [TestProject] do second clic and search option Run Tests.
+3. Go to [TestProject] do second clic and search option Run Tests.
 
 Regards.
