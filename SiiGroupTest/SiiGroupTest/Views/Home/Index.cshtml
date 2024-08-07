@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Test by Jorge Leon</h1>
+    <div class="input-group mb-3" style="max-width: 375px;">
+        <input class="form-control" id="employeeSearch" type="text" placeholder="enter id employee (number)" />
+        <button class="btn btn-primary" id="searchEmployee" type="button" onclick="GetEmployees(event)">
+            Search Employees
+        </button>
+    </div>
+    <p>
+        <div>
+            <table id="employees" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Salary</th>
+                        <th>Anual Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </p>
+</div>
+
+<script>
+    function GetEmployees(event) {
+        const buttonId = document.getElementById(event.target.id);
+
+        buttonId.innerHTML = "wait...";
+        buttonId.disabled = true;
+
+        const employeeId = document.getElementById("employeeSearch").value;
+
+        let url = "https://localhost:7213/Home/";
+
+        if (employeeId == "") {
+            url += "GetEmployees";
+        } else {
+            url += "GetEmployees?idEmployee=" + employeeId;
+        }
+
+        fetch(url)
+            .then(answer =>
+                answer.json()
+            )
+            .then((json) => {
+                if (json.errorMessage != "") {
+                    document.getElementById("employees").style.display = "none";
+                    alert(json.errorMessage);
+                } else {
+                    document.getElementById("employees").style.display = null;
+                    console.log(json.employees);
+                    loadEmployeeTable(json.employees);
+                }
+
+                buttonId.innerHTML = "Search Employees";
+                buttonId.disabled = false;
+            })
+            .catch(error =>
+                console.log(error)
+            );
+    }
+
+    function loadEmployeeTable(employees) {
+        const tableContent = document.getElementById("employees").getElementsByTagName("tbody")[0];
+        //clean data table
+        tableContent.innerHTML = "";
+
+        employees.forEach(employee => {
+            let row = tableContent.insertRow();
+            let cellId = row.insertCell(0);
+            let cellName = row.insertCell(1);
+            let cellAge = row.insertCell(2);
+            let cellSalary = row.insertCell(3);
+            let cellEmployee_anual_salary = row.insertCell(4);
+
+            cellId.innerHTML = employee.id;
+            cellName.innerHTML = employee.employee_name;
+            cellAge.innerHTML = employee.employee_age;
+            cellSalary.innerHTML = "$" + employee.employee_salary;
+            cellEmployee_anual_salary.innerHTML = "$" + employee.employee_anual_salary;
+        });
+    }
+</script>

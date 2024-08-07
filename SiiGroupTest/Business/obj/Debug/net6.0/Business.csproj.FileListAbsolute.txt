@@ -1,0 +1,11 @@
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\bin\Debug\net6.0\Business.deps.json
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\bin\Debug\net6.0\Business.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\bin\Debug\net6.0\Business.pdb
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\refint\Business.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\Business.pdb
+E:\Repository\SiiGroupTest\SiiGroupTest\Business\obj\Debug\net6.0\ref\Business.dll

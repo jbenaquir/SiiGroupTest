@@ -1,0 +1,11 @@
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\bin\Debug\net6.0\Models.deps.json
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\bin\Debug\net6.0\Models.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\bin\Debug\net6.0\Models.pdb
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\refint\Models.dll
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\Models.pdb
+E:\Repository\SiiGroupTest\SiiGroupTest\Models\obj\Debug\net6.0\ref\Models.dll
